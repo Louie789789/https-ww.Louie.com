@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="kali-linux-logo-11562915225uyursxhbp6.png">
     <title>Number System Conversion</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -16,9 +17,9 @@
             justify-content: center;
             min-height: 100vh;
             background-size: cover;
-            backdrop-filter: blur(5px);
+            backdrop-filter: none;
             background-repeat: no-repeat;
-            background-image: url(https://media.giphy.com/media/gVerUrglGXR0nwZle7/giphy.gif);
+            background-image: url(https://media0.giphy.com/media/WaEbWomVfi3kZ4QbxT/giphy.gif);
         }
         .navbar {
             background-color: #010913;
@@ -46,7 +47,6 @@
         <div style="font-family: fantasy;">HI-HO!</div>
         <div>
             <a href="index.html">Home</a>
-            <a href="#CONTACT">CONTACT AND ABOUT</a>
             <a href="website.html">NUMBER SYSTEM CONVERSION</a>
         </div>
     </div>
@@ -124,10 +124,10 @@
         function isValidNumber(number, base) {
             let regex;
             switch (base) {
-                case 2: regex = /^[01]+$/; break; // Binary
-                case 8: regex = /^[0-7]+$/; break; // Octal
-                case 10: regex = /^[0-9]+$/; break; // Decimal
-                case 16: regex = /^[0-9A-Fa-f]+$/; break; // Hexadecimal
+                case 2: regex = /^[01]+$/; break;
+                case 8: regex = /^[0-7]+$/; break;
+                case 10: regex = /^[0-9]+$/; break;
+                case 16: regex = /^[0-9A-Fa-f]+$/; break;
                 default: return false;
             }
             return regex.test(number);
